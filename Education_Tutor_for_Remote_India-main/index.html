@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VidyaConnect | Quality Education for Remote India</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Remixicons for Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar (Bandwidth & Language toggle) -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="bandwidth-toggle">
+                <i class="ri-signal-wifi-line indicator-high"></i>
+                <span class="bt-text" id="bandwidth-status">High Bandwidth Mode</span>
+                <label class="switch">
+                    <input type="checkbox" id="bandwidth-switch">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="language-dropdown">
+                <i class="ri-global-line"></i>
+                <select id="lang-select">
+                    <option value="en">English</option>
+                    <option value="hi">हिंदी (Hindi)</option>
+                    <option value="ta">தமிழ் (Tamil)</option>
+                    <option value="te">తెలుగు (Telugu)</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="glass-header">
+        <div class="container nav-inner">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i class="ri-book-read-fill"></i></div>
+                <span>Vidya<span class="text-primary">Connect</span></span>
+            </a>
+            <nav class="desktop-nav">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#subjects" class="nav-link">Subjects</a>
+                <a href="#tutors" class="nav-link">Find a Tutor</a>
+                <a href="#about" class="nav-link">About Us</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn btn-outline">Log In</button>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <div class="badge fade-in-up" style="animation-delay: 0.1s;">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text" data-i18n="hero_badge">Empowering Rural India</span>
+                </div>
+                <h1 class="fade-in-up" style="animation-delay: 0.2s;" data-i18n="hero_title">
+                    Brilliant Minds Deserve <span class="text-primary text-underline">Brilliant Teachers.</span>
+                </h1>
+                <p class="hero-subtitle fade-in-up" style="animation-delay: 0.3s;" data-i18n="hero_subtitle">
+                    Connect with top educators across the country, right from your village. Optimized for low-bandwidth connections so learning never stops.
+                </p>
+                <div class="hero-cta fade-in-up" style="animation-delay: 0.4s;">
+                    <button class="btn btn-primary btn-large">
+                        Start Learning Free
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                    <button class="btn btn-text btn-large popup-video">
+                        <i class="ri-play-circle-fill"></i>
+                        See How It Works
+                    </button>
+                </div>
+                <div class="stats fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="stat-item">
+                        <h3>10k+</h3>
+                        <p>Students</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Expert Tutors</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <h3>12</h3>
+                        <p>Languages</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual fade-in" style="animation-delay: 0.4s;">
+                <div class="glass-card visual-wrapper">
+                    <img src="assets/hero.png" alt="Indian tutor teaching a student online" class="hero-img">
+                    <div class="floating-badge badge-1 tooltip-container">
+                        <i class="ri-video-chat-fill"></i>
+                        <span>Live Class Ongoing</span>
+                    </div>
+                    <div class="floating-badge badge-2 tooltip-container">
+                        <i class="ri-download-cloud-2-fill"></i>
+                        <span>Offline Sync Active</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Essential Features for Remote India section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2 data-i18n="features_title">Built for Real-World Access</h2>
+                <p>We designed our platform keeping rural connectivity constraints in mind.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card glass-card hover-lift fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="icon-box bg-blue">
+                        <i class="ri-wifi-line"></i>
+                    </div>
+                    <h3>Low-Bandwidth Mode</h3>
+                    <p>Switch to audio-only or compressed video when your internet connection drops, saving data without losing the lesson.</p>
+                </div>
+                <div class="feature-card glass-card hover-lift fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="icon-box bg-orange">
+                        <i class="ri-cloud-off-line"></i>
+                    </div>
+                    <h3>Offline Access</h3>
+                    <p>Download class recordings and study materials when connected, and access them anytime completely offline.</p>
+                </div>
+                <div class="feature-card glass-card hover-lift fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="icon-box bg-green">
+                        <i class="ri-translate-2"></i>
+                    </div>
+                    <h3>Learn in Your Language</h3>
+                    <p>Education is best delivered in the mother tongue. Find tutors fluent in Hindi, Tamil, Telugu, Marathi, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Find a Tutor Section -->
+    <section id="tutors" class="tutors-section bg-light">
+        <div class="container">
+            <div class="section-header flex-between fade-in-up">
+                <div>
+                    <h2>Find the Perfect Tutor</h2>
+                    <p>Filter by subject, language, and grade level.</p>
+                </div>
+                <button class="btn btn-outline">View All Tutors</button>
+            </div>
+            
+            <div class="tutor-filters glass-card fade-in-up">
+                <div class="filter-group">
+                    <label>Subject</label>
+                    <select id="filter-subject">
+                        <option value="all">All Subjects</option>
+                        <option value="math">Mathematics</option>
+                        <option value="science">Science</option>
+                        <option value="english">English</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Grade Level</label>
+                    <select id="filter-grade">
+                        <option value="all">All Grades</option>
+                        <option value="primary">Primary (1-5)</option>
+                        <option value="middle">Middle (6-8)</option>
+                        <option value="high">High School (9-12)</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Language</label>
+                    <select id="filter-lang">
+                        <option value="all">Any Language</option>
+                        <option value="hi">Hindi</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary btn-search" id="btn-search-tutors">
+                    <i class="ri-search-line"></i> Search
+                </button>
+            </div>
+
+            <div class="tutor-grid" id="tutor-results">
+                <!-- Tutors will be populated here via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <div class="logo-icon"><i class="ri-book-read-fill"></i></div>
+                    <span style="color:white;">Vidya<span class="text-primary">Connect</span></span>
+                </a>
+                <p>Bridging the education gap in rural India through accessible, low-bandwidth online tutoring and expert mentorship.</p>
+                <div class="social-links">
+                    <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-col">
+                    <h4>Platform</h4>
+                    <a href="#">Tutors</a>
+                    <a href="#">Subjects</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Offline App</a>
+                </div>
+                <div class="link-col">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Become a Tutor</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="link-col">
+                    <h4>Legal</h4>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 VidyaConnect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
